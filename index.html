@@ -41,9 +41,14 @@
 
 	/* Main body and headings */
 	   body {
-		font-family: 'Open Sans', Helvetica, Arial, san-serif;
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	   }
-	   .heading, .subheading {
+	   .heading {
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		color: #FF8000;
+		text-align: center;
+	   }
+	   .subheading {
 		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 		text-align: center;
 	   }
@@ -73,6 +78,11 @@
 	   }
 	   .video, .thermometer, .order, .social, .statistics {
 		text-align: center;
+	   }
+	   .grabbers {
+		text-align: center;
+		background-color: #FF8000;
+		padding: 3% 0%;
 	   }
 	   .statistics h3, .statistics p {
 		color: white;
@@ -109,16 +119,18 @@
 		<div class="container">
 		   <button type="button" class="btn btn-navbar"
 			data-toggle="collapse" data-target=".nav-collapse">
-		    <span class="icon=bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
 		    <span class="icon-bar"></span>
 		    <span class="icon-bar"></span>
 		   </button>
-		   <a class="brand" href="#">Bitstarter</a>
+		   <a class="brand" href="#">CrowdForce</a>
 		   <div class="nav-collapse collapse">
 		     <ul class="nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact">Applications</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#docs">Docs</a></li>
 		     </ul>
 		   </div><!--/nav-collapse -->
 		</div>
@@ -128,12 +140,12 @@
 	<div class="container">
 	   <div class="row-fluid heading">
 		<div class="span12">
-		   <h1>Product</h1>
+		   <h1>Meet Your Workforce: The World</h1>
 		</div>
 	   </div>
 	   <div class="row-fluid subheading">
 		<div class="span12">
-		   <p class="lead">One sentence description.</p>
+		   <p class="lead">Quickly find people to create, audit and enhance your data.</p>
 		</div>
 	   </div>
 	   <div class="row-fluid pitch">
@@ -168,12 +180,9 @@
 			   <div class="bar bar-warning" style="width: 40%;"></div>
 			</div>
 		   </div>
-		   <div class="span8 offset2 order">
-			<button class="btn btn-success btn-large">Preorder</button>
-		   </div>
 		   <div class="span8 offset2 social">
-			<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-			<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+			<button class="btn btn-twitter btn-small"><i class="icon-twitter"></i> | Twitter</button>
+			<button class="btn btn-facebook btn-small"><i class="icon-facebook"></i> | Facebook</button>
 		   </div>
 	   	</div><!-- actions -->
 	   </div><!-- container -->
@@ -181,21 +190,12 @@
 	   <!-- Beyond this part the marketing copy begings. -->
 
 	   <div class="row-fluid section1">
-		<div class="span5 offset1 asset">
-		   <img class="img-polaroid" src="http://placehold.it/480x300">
-		</div>
-		<div class="span5 copy">
-		   <p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ante sem, 
-			consequat vel viverra id, pretium pretium neque. Praesent a libero 
-			condimentum, suscipit ligula et, pellentesque augue. Interdum et malesuada 
-			fames ac ante ipsum primis in faucibus. Nullam euismod lorem vel risus congue, 
-			aliquet egestas nunc viverra. Suspendisse id rutrum lorem, ac tempus eros. 
-			Phasellus lectus lorem, fermentum sed mauris sit amet, pellentesque ultrices 
-			mauris. Aenean mauris lorem, aliquet sed neque quis, accumsan hendrerit ante. 
-			Nunc fringilla augue a turpis gravida luctus id in lacus. Phasellus id nibh 
-			ultricies, tincidunt nisl in, viverra nulla. Praesent et nulla eget justo.
-		   </p>
+		<div class="span12">
+		   <div class="row-fluid">
+			<div class="span3 offset1 grabbers"><p>How It Works</p></div>
+			<div class="span3 grabbers"><p>Get Started</p></div>
+			<div class="span3 grabbers"><p>Latest from our Blog</p></div>
+		   </div>
 		</div>
 	   </div>
 
